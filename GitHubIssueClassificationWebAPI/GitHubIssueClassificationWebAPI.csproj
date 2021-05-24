@@ -13,5 +13,14 @@
     <ProjectReference Include="..\GitHubIssueClassification\GitHubIssueClassification.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Models\model.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Models\model2.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 
 </Project>

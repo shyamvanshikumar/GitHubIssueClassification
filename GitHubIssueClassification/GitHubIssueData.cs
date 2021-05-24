@@ -22,4 +22,15 @@ namespace GitHubIssueClassification
         [ColumnName("PredictedLabel")]
         public string Area;
     }
+
+    public class IssueScorePrediction
+    {
+        [LoadColumn(0, 21)]
+        [VectorType(22)]
+        public float[] Score;
+
+        [LoadColumn(7)]
+        [ColumnName("PredictedLabel")]
+        public string Area;
+    }
 }

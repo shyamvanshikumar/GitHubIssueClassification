@@ -19,7 +19,7 @@ namespace GitHubIssueClassificationWebAPI
     public class Startup
     {
         private static string appPath => Path.GetDirectoryName(Environment.GetCommandLineArgs()[0]);
-        private static string modelPath => Path.Combine(appPath, "..", "..", "..","..","GitHubIssueClassification", "Model", "model.zip");
+        private static string modelPath = "Models/model2.zip";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
